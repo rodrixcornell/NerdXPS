@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Abrir Chamado</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body class="body-abrirchamado">
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle nav-btn" data-toggle="collapse" data-target=".navbar-collapse">
+                                <a href="index.html">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Abrir Chamado</a>
+                        </div>
+                    </nav>
+                    <!-- /.Navigation -->
+                    <form role="form">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Selecione o seu problema</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3">Fale de seu problema</textarea>
+                        </div>
+                        <div class="form-group form-group-date-time">
+                            <p class="text-center">Quando você pode receber o técnico?</p>
+                            <input class="form-control text-center input-date" placeholder="00/00/0000">
+                            <input class="form-control text-center input-time" placeholder="00:00">
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-lg btn-block btn-envie-foto">Envie uma foto do problema</a>
+                            <!--<input type="file">-->
+                        </div>
+                        <div class="form-group">
+                            <a href="index.html" class="btn btn-lg btn-block btn-enviar-chamado">Enviar Chamado</a>
+                            <!--<button type="submit" class="btn btn-default">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>-->
+                        </div>
+                    </form>
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery Version 1.11.0 -->
+        <script src="js/jquery-1.11.0.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
