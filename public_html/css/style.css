@@ -55,8 +55,8 @@ body {
 }
 
 .panel, .panel-cell {
-    background: #131304;
     border: 15px #131304 solid;
+    background: #131304;
     border-radius: 25px;
     padding-bottom: 25px;
 }
@@ -103,11 +103,10 @@ body {
  * abrir chamado
  */
 .panel-cell-abrir-chamado {
-    color: #FF8000;
-    background: #131304;
-    border: 15px #131304 solid;
-    border-radius: 25px;
-    padding-bottom: 25px;
+    background: #FF8000;
+    /*    border-bottom-width: 35px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;*/
 }
 
 .input-date {
@@ -123,22 +122,3 @@ body {
     color: #FF8000;
     background-color: #fff
 }
-
-/*div.row {
-    margin-bottom: 5px;
-}*/
-/*.panel {
-    background: transparent;
-}
-
-.panel-default {
-    border-color: transparent;
-}
-.panel-default > .panel-heading {
-    padding: 0px;
-    background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(0,0,0,0));  For Safari 5.1 to 6.0
-    background: -o-linear-gradient(rgba(255,255,255,1) 50%, rgba(0,0,0,0));  For Opera 11.1 to 12.0
-    background: -moz-linear-gradient(rgba(255,255,255,1) 50%, rgba(0,0,0,0));  For Firefox 3.6 to 15
-    background: linear-gradient(rgba(255,255,255,1) 50%, rgba(0,0,0,0));  Standard syntax (must be last)
-}
-}*/

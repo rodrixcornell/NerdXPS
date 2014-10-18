@@ -32,6 +32,7 @@
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/libs/bootstrap-filestyle.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
     </head>
 
@@ -61,21 +62,20 @@
                             <nav class="navbar navbar-default" role="navigation">
                                 <!-- Brand and toggle get grouped for better mobile display -->
                                 <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle nav-btn" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <a href="index.html">
-                                            <span class="sr-only">Toggle navigation</span>
+                                    <a href="index_usuario.html">
+                                        <button type="button" class="navbar-toggle nav-btn">
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
-                                        </a>
-                                    </button>
-                                    <a class="navbar-brand" href="index.html">Abrir Chamado</a>
+                                        </button>
+                                    </a>
+                                    <a href="index_usuario.html" class="navbar-brand">Abrir Chamado</a>
                                 </div>
                             </nav>
                             <!-- /.Navigation -->
                             <form role="form">
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Nome">
+                                    <input type="text" pattern="[a-zA-Z]+" placeholder="Nome" required="required" class="form-control" >
                                 </div>
                                 <div class="form-group">
                                     <select class="form-control">
@@ -88,21 +88,19 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="3">Fale de seu problema</textarea>
+                                    <textarea placeholder="Fale de seu problema..." required="required" class="form-control" rows="3"></textarea>
                                 </div>
                                 <div class="form-group form-group-date-time">
                                     <p class="text-center">Quando você pode receber o técnico?</p>
-                                    <input class="form-control text-center input-date" placeholder="00/00/0000">
-                                    <input class="form-control text-center input-time" placeholder="00:00">
+                                    <input type="date" required="required" class="form-control text-center input-date">
+                                    <input type="time" required="required" class="form-control text-center input-time">
                                 </div>
                                 <div class="form-group">
-                                    <a href="#" class="btn btn-lg btn-block btn-envie-foto">Envie uma foto do problema</a>
-                                    <!--<input type="file">-->
+                                    <input type="file" required="required" class="filestyle" data-buttonName="btn-lg btn-envie-foto" data-input="false" data-buttonText="Envie uma foto do problema" data-iconName="glyphicon-paperclip">
                                 </div>
                                 <div class="form-group">
-                                    <a href="index.html" class="btn btn-lg btn-block btn-enviar-chamado">Enviar Chamado</a>
-                                    <!--<button type="submit" class="btn btn-default">Submit Button</button>
-                                    <button type="reset" class="btn btn-default">Reset Button</button>-->
+                                    <button type="submit" class="btn btn-lg btn-block btn-enviar-chamado">Enviar Chamado</button>
+                                    <!--<button type="reset" class="btn btn-default">Reset Button</button>-->
                                 </div>
                             </form>
                         </div>
