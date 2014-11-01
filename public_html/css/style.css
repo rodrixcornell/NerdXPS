@@ -21,6 +21,7 @@ body {
 .row-footer-2 {
     font-size: 0.8em;
     background-color: #445C90;
+    border-radius: 6px;
 }
 
 .main-container, .row-footer-1, .row-footer-2 {
@@ -41,12 +42,14 @@ body {
     color: #445C90;
     background-color: #fff;
     min-height: 500px;
+    border-radius: 6px;
 
 }
 .coluna-video {
     background-color: #000;
     padding: 15px 0px;
     min-height: 200px;
+    border-radius: 6px;
 }
 
 .text-aviso {
@@ -54,11 +57,11 @@ body {
     background-color: #1791dc;
 }
 
-.panel, .panel-cell {
+.panel-cell {
     border: 15px #131304 solid;
-    background: #131304;
     border-radius: 25px;
     padding-bottom: 25px;
+    background: #131304;
 }
 
 .btn-abrir-chamado {
@@ -103,19 +106,52 @@ body {
  * abrir chamado
  */
 .panel-cell-abrir-chamado {
+    border: 15px #131304 solid;
+    border-radius: 25px;
+    padding-bottom: 25px;
     background: #FF8000;
 }
 
 .input-date {
     float: left;
-    width: 55%;
+    width: 66%;
 }
 
 .input-time {
-    width: 45%;
+    width: 34%;
+}
+
+@media screen and (max-width:320px) {
+    .input-date, .input-time, .text-center, .row-footer-1 {
+        font-size: 0.9em;
+    }
+
+    .col-xs-4 {
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+}
+
+.form-group-date-time {
+    border-radius: 4px;
+}
+
+.input-group, .btn-envie-foto {
+    width: 100%;
 }
 
 .form-group-date-time, .btn-envie-foto, .btn-enviar-chamado {
     color: #FF8000;
-    background-color: #fff
+    background-color: #fff;
+}
+
+/****
+ * orçamento
+ */
+.panel-cell-orcamento {
+    border: 15px #131304 solid;
+    border-radius: 25px;
+    padding-bottom: 25px;
+    background: #FFFF26;
 }
